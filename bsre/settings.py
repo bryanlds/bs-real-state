@@ -17,12 +17,16 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    "django.contrib.admin", "django.contrib.auth",
-    "django.contrib.contenttypes", "django.contrib.sessions",
-    "django.contrib.messages", "django.contrib.staticfiles",
-    "django.contrib.humanize", "src.apps.pages.apps.PagesConfig",
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
+    "django.contrib.humanize",
+    "src.apps.pages.apps.PagesConfig",
     "src.apps.listings.apps.ListingsConfig",
-    "src.apps.realtors.apps.RealtorsConfig"
+    "src.apps.realtors.apps.RealtorsConfig",
 ]
 
 MIDDLEWARE = [
@@ -37,19 +41,21 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "bsre.urls"
 
-TEMPLATES = [{
-    "BACKEND": "django.template.backends.django.DjangoTemplates",
-    "DIRS": [os.path.join(BASE_DIR, 'src/templates')],
-    "APP_DIRS": True,
-    "OPTIONS": {
-        "context_processors": [
-            "django.template.context_processors.debug",
-            "django.template.context_processors.request",
-            "django.contrib.auth.context_processors.auth",
-            "django.contrib.messages.context_processors.messages",
-        ]
-    },
-}]
+TEMPLATES = [
+    {
+        "BACKEND": "django.template.backends.django.DjangoTemplates",
+        "DIRS": [os.path.join(BASE_DIR, "src/templates")],
+        "APP_DIRS": True,
+        "OPTIONS": {
+            "context_processors": [
+                "django.template.context_processors.debug",
+                "django.template.context_processors.request",
+                "django.contrib.auth.context_processors.auth",
+                "django.contrib.messages.context_processors.messages",
+            ]
+        },
+    }
+]
 
 WSGI_APPLICATION = "bsre.wsgi.application"
 
@@ -59,10 +65,10 @@ WSGI_APPLICATION = "bsre.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": 'bsredb',
-        "USER": 'bryan',
-        "PASSWORD": '123456',
-        "HOST": 'localhost'
+        "NAME": "bsredb",
+        "USER": "bryan",
+        "PASSWORD": "123456",
+        "HOST": "localhost",
     }
 }
 
@@ -71,22 +77,12 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        "NAME":
-        "django.contrib.auth.password_validation." +
-        "UserAttributeSimilarityValidator"
+        "NAME": "django.contrib.auth.password_validation."
+        + "UserAttributeSimilarityValidator"
     },
-    {
-        "NAME":
-        "django.contrib.auth.password_validation.MinimumLengthValidator"
-    },
-    {
-        "NAME":
-        "django.contrib.auth.password_validation.CommonPasswordValidator"
-    },
-    {
-        "NAME":
-        "django.contrib.auth.password_validation.NumericPasswordValidator"
-    },
+    {"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator"},
+    {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator"},
+    {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},
 ]
 
 # Internationalization
@@ -105,10 +101,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 STATIC_URL = "/static/"
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'bsre/static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "bsre/static")]
 
 # Media Folder Settings
-MEDIA_ROOT = os.path.join(BASE_DIR, 'src/media')
-MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "src/media")
+MEDIA_URL = "/media/"

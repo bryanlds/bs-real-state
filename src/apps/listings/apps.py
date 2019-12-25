@@ -2,4 +2,4 @@ from django.apps import AppConfig
 
 
 class ListingsConfig(AppConfig):
-    name = 'src.apps.listings'
+    name = "src.apps.listings"
