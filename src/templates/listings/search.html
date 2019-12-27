@@ -1,0 +1,39 @@
+{% extends 'base.html' %} 
+{% block content %}
+  <section id="showcase-inner" class="showcase-search text-white py-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <form action="{% url 'listings:search' %}">
+            {% include 'partials/_search_form.html' %}
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <section id="bc" class="mt-3">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="{% url 'pages:index' %}">
+              <i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="{% url 'listings:index' %}">Browse Listings</a>
+          </li>
+          <li class="breadcrumb-item active"> Search Results</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Listings -->
+  <section id="listings" class="py-4">
+    <div class="container">
+      {% include 'partials/_listings.html' %}
+    </div>
+  </section>
+  {% endblock %}
