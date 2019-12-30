@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     "src.apps.listings.apps.ListingsConfig",
     "src.apps.realtors.apps.RealtorsConfig",
     "src.apps.accounts.apps.AccountsConfig",
+    "src.apps.contacts.apps.ContactsConfig",
 ]
 
 MIDDLEWARE = [
