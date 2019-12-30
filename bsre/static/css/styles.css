@@ -41,6 +41,13 @@ img {
   background: rgba(51, 51, 51, 0.8);
 }
 
+#showcase .alert {
+  position: absolute;
+  top: 0;
+  left: 3rem;
+  right: 3rem;
+}
+
 #services {
   background: url("../img/building.jpg") no-repeat top center fixed;
   min-height: 300px;
