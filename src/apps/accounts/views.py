@@ -1,4 +1,5 @@
 from django.views.decorators.http import require_safe, require_POST
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib import messages, auth
@@ -67,5 +68,6 @@ def logout(request):
     return redirect("pages:index")
 
 
+@login_required
 def dashboard(request):
     return render(request, "accounts/dashboard.html")
