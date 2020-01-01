@@ -1,0 +1,14 @@
+appdirs==1.4.3
+asgiref==3.2.3
+attrs==19.3.0
+black==19.3b0
+certifi==2019.11.28
+Click==7.0
+Django==3.0
+olefile==0.46
+Pillow==6.2.1
+psycopg2==2.8.4
+pycodestyle==2.5.0
+pytz==2019.3
+sqlparse==0.3.0
+toml==0.10.0
