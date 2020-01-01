@@ -16,7 +16,7 @@ def contact(request):
         )
         if has_contacted:
             messages.error(request, "You have already made an inquiry for this listing")
-            return redirect("accounts:listings/" + form_values.listing_id)
+            return redirect("listings:listing", listing_id=form_values.listing_id)
 
     contact = Contact(
         listing=form_values.listing,
