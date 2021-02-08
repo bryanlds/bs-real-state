@@ -35,6 +35,17 @@ python manage.py runserver
 
 Now that the server’s running, visit http://127.0.0.1:8000/ with your Web browser. 
 
+### Login (admin)
+
+Go to http://127.0.0.1:8000/admin/
+
+```
+Username: admin
+
+Password: 123456
+```
+
+
 ### TODO
 
 > Send e-mail to realtors
