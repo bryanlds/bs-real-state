@@ -67,11 +67,8 @@ WSGI_APPLICATION = "bsre.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "bsredb",
-        "USER": "bryan",
-        "PASSWORD": "123456",
-        "HOST": "localhost",
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": "bsredb"
     }
 }
 
