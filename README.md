@@ -4,13 +4,11 @@
 
 ### Technologies
 
-- django 3.0.
-- python 3.8
-- pillow 6.2.1
-- psycopg2 2.8.4
-- postgresql-11
-- black 19.3b0 (code style)
-- pycodestyle 2.5.0
+- django 3.1.6.
+- python 3.9.1
+- sqlite3
+- black (code formatting)
+- pycodestyle
 - bootstrap 4.4.1 (custom)
 
 ### Install
