@@ -2,6 +2,15 @@
 
 > Web project using Python (Django). Simulates a real estate company; search for your property!
 
+---
+
+</br>
+<div align=center margin= auto> 
+  <img src="screen-capture/home.png"  width=80%>
+</div>
+
+---
+
 ### Technologies
 
 - django 3.1.6.
