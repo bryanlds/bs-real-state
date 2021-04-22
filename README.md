@@ -45,7 +45,6 @@ Username: admin
 Password: 123456
 ```
 
+### Video
 
-### TODO
-
-> Send e-mail to realtors
+You can check out a demo video of this project on my [linkedin post](https://www.linkedin.com/posts/bryan-leite-dos-santos_django-python-webdevelopment-activity-6618287510470615040-Ng4Y)
